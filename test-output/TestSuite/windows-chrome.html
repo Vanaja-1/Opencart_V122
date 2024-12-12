@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>windows-chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 22 15:52:21 GMT 2024</td>
+<td>Started on:</td><td>Mon Dec 09 15:39:52 GMT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>32 seconds (32614 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46671 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Master </td>
 </tr><tr>
@@ -76,16 +76,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TC2_Login.testLoginWithValidCredentials()'><b>testLoginWithValidCredentials</b><br>Test class: testcases.TC2_Login</td>
-<td><div><pre>java.lang.AssertionError: Login failed: &apos;My Account&apos; page not displayed. expected [true] but found [false]
-	at testcases.TC2_Login.testLoginWithValidCredentials(TC2_Login.java:51)
+<td title='testcases.TC3_Logout.testLogout()'><b>testLogout</b><br>Test class: testcases.TC3_Logout</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;pageobjects.LogoutPage.clickContinue()&quot; because &quot;logoutPage&quot; is null
+	at testcases.TC3_Logout.testLogout(TC3_Logout.java:68)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2037964834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2037964834'><pre>java.lang.AssertionError: Login failed: &apos;My Account&apos; page not displayed. expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at testcases.TC2_Login.testLoginWithValidCredentials(TC2_Login.java:51)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1469235340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1469235340'><pre>java.lang.NullPointerException: Cannot invoke &quot;pageobjects.LogoutPage.clickContinue()&quot; because &quot;logoutPage&quot; is null
+	at testcases.TC3_Logout.testLogout(TC3_Logout.java:68)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -114,7 +111,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>22</td>
-<td>testcases.TC2_Login@75ed9710</td></tr>
+<td>testcases.TC3_Logout@4bef0fe3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -125,10 +122,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TC1_Registration.testUserRegistration()'><b>testUserRegistration</b><br>Test class: testcases.TC1_Registration</td>
+<td title='testcases.TC5_AddToCart.testAddToCart()'><b>testAddToCart</b><br>Test class: testcases.TC5_AddToCart</td>
 <td></td>
 <td>4</td>
-<td>testcases.TC1_Registration@7a791b66</td></tr>
+<td>testcases.TC5_AddToCart@27953a83</td></tr>
+<tr>
+<td title='testcases.TC4_SeachProduct.testProductSearch()'><b>testProductSearch</b><br>Test class: testcases.TC4_SeachProduct</td>
+<td></td>
+<td>2</td>
+<td>testcases.TC4_SeachProduct@62ea3440</td></tr>
+<tr>
+<td title='testcases.TC2_Login.testLoginWithValidCredentials()'><b>testLoginWithValidCredentials</b><br>Test class: testcases.TC2_Login</td>
+<td></td>
+<td>4</td>
+<td>testcases.TC2_Login@192d74fb</td></tr>
+<tr>
+<td title='testcases.TC1_Registration.testUserRegistration()'><b>testUserRegistration</b><br>Test class: testcases.TC1_Registration</td>
+<td></td>
+<td>3</td>
+<td>testcases.TC1_Registration@75ed9710</td></tr>
 </table><p>
 </body>
 </html>

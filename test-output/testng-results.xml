@@ -1,55 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-29T12:23:27 GMT" name="Failed suite [TestSuite]" finished-at="2024-11-29T12:23:54 GMT" duration-ms="26265">
+  <suite started-at="2024-12-09T16:09:17 GMT" name="Default suite" finished-at="2024-12-09T16:09:17 GMT" duration-ms="71">
     <groups>
       <group name="Master">
-        <method signature="TC2_Login.testLoginWithValidCredentials()[pri:0, instance:testcases.TC2_Login@40f1be1b]" name="testLoginWithValidCredentials" class="testcases.TC2_Login"/>
+        <method signature="TC3_Logout.testLogout()[pri:0, instance:testcases.TC3_Logout@1b065145]" name="testLogout" class="testcases.TC3_Logout"/>
       </group> <!-- Master -->
       <group name="Sanity">
-        <method signature="TC2_Login.testLoginWithValidCredentials()[pri:0, instance:testcases.TC2_Login@40f1be1b]" name="testLoginWithValidCredentials" class="testcases.TC2_Login"/>
+        <method signature="TC3_Logout.testLogout()[pri:0, instance:testcases.TC3_Logout@1b065145]" name="testLogout" class="testcases.TC3_Logout"/>
       </group> <!-- Sanity -->
     </groups>
-    <test started-at="2024-11-29T12:23:27 GMT" name="windows-chrome(failed)" finished-at="2024-11-29T12:23:54 GMT" duration-ms="26265">
-      <class name="testcases.TC2_Login">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC2_Login@40f1be1b]" started-at="2024-11-29T12:23:27 GMT" name="setUp" finished-at="2024-11-29T12:23:30 GMT" duration-ms="2503" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mac]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLoginWithValidCredentials()[pri:0, instance:testcases.TC2_Login@40f1be1b]" started-at="2024-11-29T12:23:30 GMT" name="testLoginWithValidCredentials" finished-at="2024-11-29T12:23:53 GMT" duration-ms="23210" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2024-12-09T16:09:17 GMT" name="Default test" finished-at="2024-12-09T16:09:17 GMT" duration-ms="71">
+      <class name="testcases.TC3_Logout">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC3_Logout@1b065145]" started-at="2024-12-09T16:09:17 GMT" name="setUp" finished-at="1970-01-01T01:00:00 GMT" duration-ms="-1733760557559" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Login failed: 'My Account' page not displayed. expected [true] but found [false]]]>
+              <![CDATA[
+Parameter 'os' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in /private/var/folders/mz/mdqjsy8n187b10lgvrg6bxsc0000gn/T/testng-eclipse--1569355267/testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login failed: 'My Account' page not displayed. expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at testcases.TC2_Login.testLoginWithValidCredentials(TC2_Login.java:51)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in /private/var/folders/mz/mdqjsy8n187b10lgvrg6bxsc0000gn/T/testng-eclipse--1569355267/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
@@ -68,15 +49,55 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC2_Login@40f1be1b]" started-at="2024-11-29T12:23:54 GMT" name="tearDown" finished-at="2024-11-29T12:23:54 GMT" duration-ms="119" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogout()[pri:0, instance:testcases.TC3_Logout@1b065145]" started-at="2024-12-09T16:09:17 GMT" name="testLogout" finished-at="2024-12-09T16:09:17 GMT" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'os' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in /private/var/folders/mz/mdqjsy8n187b10lgvrg6bxsc0000gn/T/testng-eclipse--1569355267/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'os' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in /private/var/folders/mz/mdqjsy8n187b10lgvrg6bxsc0000gn/T/testng-eclipse--1569355267/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC3_Logout@1b065145]" started-at="2024-12-09T16:09:17 GMT" name="tearDown" finished-at="2024-12-09T16:09:17 GMT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC2_Login -->
-    </test> <!-- windows-chrome(failed) -->
-  </suite> <!-- Failed suite [TestSuite] -->
+      </class> <!-- testcases.TC3_Logout -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
